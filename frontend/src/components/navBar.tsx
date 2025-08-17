@@ -33,7 +33,7 @@ export default function NavBar() {
     <Link href="/about" className="dropdown-item">About</Link>
   </li>
   <li>
-    <Link href="/register" className="dropdown-item">Register</Link>
+    <Link href="/faq" className="dropdown-item">FAQ's</Link>
   </li>
   <li><hr className="dropdown-divider" /></li>
   <li>
@@ -42,7 +42,7 @@ export default function NavBar() {
 </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link " href="/FAQ">FAQ's</a>
+          <a className="nav-link " href="/login">Login</a>
         </li>
       </ul>
       <form className="d-flex" role="search">
