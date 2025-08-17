@@ -1,0 +1,82 @@
+/* navbar.css */
+
+/* Navbar background (light beige to match logo background) */
+.navbar {
+  background-color: #f9f6f1; /* soft beige */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #000000 !important; /* black text like "DAILY" */
+  letter-spacing: 1px;
+}
+
+/* Brand highlight (if you want "DINE" styled separately in code) */
+.navbar-brand .highlight {
+  color: #C47A2C; /* golden brown like "DINE" */
+}
+
+/* Navbar links */
+.nav-link {
+  color: #5C3A21 !important;   /* dark brown */
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #C47A2C !important;   /* golden brown hover */
+}
+
+/* Active link */
+.nav-link.active {
+  color: #C47A2C !important;
+  font-weight: 600;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+.dropdown-item {
+  color: #5C3A21;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f9f6f1;
+  color: #C47A2C;
+}
+
+/* Divider */
+.dropdown-divider {
+  margin: 0.5rem 0;
+  border-color: #e0d6c8;
+}
+
+/* Search box */
+.form-control {
+  border-radius: 1.25rem;
+  border: 1px solid #C47A2C;
+  padding-left: 15px;
+}
+
+.btn-outline-success {
+  border-radius: 1.25rem;
+  font-weight: 500;
+  border-color: #C47A2C;
+  color: #C47A2C;
+}
+
+.btn-outline-success:hover {
+  background-color: #C47A2C;
+  color: #fff;
+}

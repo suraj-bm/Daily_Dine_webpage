@@ -1,0 +1,29 @@
+.hero {
+  height: 100vh; /* full screen */
+  background: linear-gradient(135deg, #fffaf4, #fdfdfd); /* soft warm background */
+  padding: 0 20px;
+}
+
+.hero h1:first-of-type {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5C3A21; /* Dark coffee brown */
+  margin-bottom: 10px;
+}
+
+.hero h1:last-of-type {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #C47A2C; /* Golden-brown accent */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #3b2d22; /* subtle dark tone */
+}
+
+.brand-text {
+  color: #C47A2C; /* highlight Daily Dine in gold */
+  font-weight: 700;
+}
