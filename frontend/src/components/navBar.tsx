@@ -5,8 +5,12 @@ import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/navbar.css";
+interface NavBarprops{
+  onTabChange:(Tab:string)=>void;
 
-export default function NavBar() {
+}
+
+export default function NavBar({onTabChange}:NavBarprops) {
   const { data: session } = useSession();
   const [profileOpen, setProfileOpen] = useState(false);
 
@@ -40,14 +44,14 @@ export default function NavBar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link href="/" className="nav-link active">
+                <button onClick={()=>{onTabChange("message")}} className="nav-link active">
                   Home
-                </Link>
+                </button>
               </li>
               <li className="nav-item">
-                <Link href="/features" className="nav-link">
+                <button onClick={()=>{onTabChange("features")} }className="nav-link">
                   Features
-                </Link>
+                </button>
               </li>
               <li className="nav-item dropdown">
                 <a

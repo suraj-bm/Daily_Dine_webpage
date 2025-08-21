@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import Link from "next/link";
 import Providers from "@/hooks/providers";
+import NavBar from "@/components/navBar";
 
 
 export const metadata: Metadata = {
